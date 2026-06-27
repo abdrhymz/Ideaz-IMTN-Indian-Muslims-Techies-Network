@@ -1,3 +1,5 @@
+![](./i2.png)
+
 # Ideaz-IMTN-Indian-Muslims-Techies-Network
 Ideas-IMTN-Indian-Muslims-Tech-Network
 
@@ -47,3 +49,9 @@ To achieve this thesis, the project is divided into actionable, community-driven
 # Current Linkedin Group 
 
 [IMTN - Indian Muslims Technies network](https://www.linkedin.com/groups/32690009/) 
+
+
+# Issues Welcome 
+
+1. Lets brainstorm ! 
+2. Open issues for your ideas
