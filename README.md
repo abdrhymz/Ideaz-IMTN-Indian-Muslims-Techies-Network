@@ -11,6 +11,7 @@ Ideas-IMTN-Indian-Muslims-Tech-Network
     - 2.2 [Mid-Term Goals (Community Engagement & Value Loops)](#mid-term-goals-community-engagement--value-loops)
     - 2.3 [Long-Term Goals (Sustenance & Ecosystem Impact)](#long-term-goals-sustenance--ecosystem-impact)
 3. [Current Linkedin Group](#current-linkedin-group)
+3. [Issues Welcome](#issues-welcome)
 
 
 
