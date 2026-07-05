@@ -49,7 +49,7 @@ To achieve this thesis, the project is divided into actionable, community-driven
 
 # Current Linkedin Group 
 
-[IMTN - Indian Muslims Technies network](https://www.linkedin.com/groups/32690009/) 
+Website development in progresss... 
 
 
 # Issues Welcome 
