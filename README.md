@@ -47,9 +47,9 @@ To achieve this thesis, the project is divided into actionable, community-driven
 3. Cultivate Halal Tech Leadership: Provide a space for discussions on navigating corporate ethics, exploring compliant startup opportunities, and fostering executive leadership among minority professionals in the Indian subcontinent.
 
 
-# Current Linkedin Group 
+# Current Website
 
-Website development in progresss... 
+[`https://az-imtn.netlify.app/`](https://az-imtn.netlify.app/)
 
 
 # Issues Welcome 
