@@ -1,0 +1,59 @@
+name: "💡 Idea / Brainstorm / Open-Source Project"
+description: "Let's brainstorm. Propose community features or open-source projects to incubate."
+title: "[Idea] "
+labels: ["idea", "brainstorm"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues welcome — let's brainstorm!** 🧠
+        Big directions are decided through *shura* (consultation). Bring your idea; the community will shape it.
+  - type: input
+    id: title
+    attributes:
+      label: "Idea in one line"
+      placeholder: "e.g. An IMTN open-source DSA solutions repo for freshers"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Type"
+      options:
+        - "Open-source project to incubate"
+        - "Community feature / tooling"
+        - "University partnership"
+        - "Event / initiative"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation"
+      description: "What gap does this fill for Indian Muslim tech talent?"
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: "Proposed approach"
+    validations:
+      required: true
+  - type: input
+    id: skills
+    attributes:
+      label: "Skills needed (optional)"
+      placeholder: "e.g. React, Node, DevRel"
+    validations:
+      required: false
+  - type: checkboxes
+    id: involvement
+    attributes:
+      label: "Your involvement"
+      options:
+        - label: "I can lead this."
+        - label: "I can contribute."
+        - label: "Just proposing — hoping others pick it up."
+    validations:
+      required: false
