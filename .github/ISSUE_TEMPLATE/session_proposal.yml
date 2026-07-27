@@ -1,0 +1,68 @@
+name: "🎤 Propose / Volunteer for a Session"
+description: "DSA mocks, system design teardowns, resume clinics — power the interview engine."
+title: "[Session] "
+labels: ["session", "interview-engine"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Our **Peer-Review & Interview Engine** runs on members who show up to teach.
+        Knowledge shared here is *sadaqah jariyah* — it keeps benefiting people long after the session ends.
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Session type"
+      options:
+        - "DSA mock interview"
+        - "System design teardown"
+        - "Resume review clinic"
+        - "Career AMA"
+        - "Tech talk"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: "Topic / title"
+      placeholder: "e.g. System design: designing a URL shortener at scale"
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: "Format"
+      options:
+        - "Live (voice / video)"
+        - "Text-based"
+        - "Recorded"
+        - "Hybrid"
+    validations:
+      required: true
+  - type: textarea
+    id: credentials
+    attributes:
+      label: "Why you're the right person to lead this"
+      description: "Brief — relevant experience or expertise."
+    validations:
+      required: true
+  - type: dropdown
+    id: cadence
+    attributes:
+      label: "Cadence"
+      options:
+        - "One-time"
+        - "Weekly"
+        - "Fortnightly"
+        - "Monthly"
+    validations:
+      required: false
+  - type: checkboxes
+    id: logistics
+    attributes:
+      label: "Logistics"
+      options:
+        - label: "I'd like a co-host."
+        - label: "I can commit to preparing material in advance."
+    validations:
+      required: false
