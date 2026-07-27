@@ -1,0 +1,89 @@
+name: "📮 Post an Internal Opening / Referral"
+description: "Senior members: drop a real opening your company is hiring for."
+title: "[Referral: Posting] "
+labels: ["referral", "hiring"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This powers our **decentralized referral pipeline**. Post genuine openings only — integrity here is an amanah.
+  - type: input
+    id: company
+    attributes:
+      label: "Company"
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: "Role Title"
+      placeholder: "e.g. SDE-2, Backend"
+    validations:
+      required: true
+  - type: input
+    id: team
+    attributes:
+      label: "Team / Org (optional)"
+    validations:
+      required: false
+  - type: dropdown
+    id: mode
+    attributes:
+      label: "Work Mode"
+      options:
+        - "Remote"
+        - "Hybrid"
+        - "On-site"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: "Location"
+      placeholder: "e.g. Bengaluru / Remote (India)"
+    validations:
+      required: true
+  - type: dropdown
+    id: seniority
+    attributes:
+      label: "Seniority"
+      options:
+        - "Intern"
+        - "New grad"
+        - "Mid-level"
+        - "Senior"
+        - "Lead+"
+    validations:
+      required: true
+  - type: input
+    id: skills
+    attributes:
+      label: "Key Skills"
+      placeholder: "e.g. Java, Spring Boot, Kafka — comma-separated"
+    validations:
+      required: true
+  - type: input
+    id: jd
+    attributes:
+      label: "JD / Application Link"
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: "Referral process"
+      description: "How should members apply or reach you? Any internal referral portal notes?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: "Integrity check"
+      options:
+        - label: "This is a genuine, currently open role."
+          required: true
+        - label: "I'm able to refer or genuinely guide applicants for it."
+          required: true
+        - label: "This is not a paid or promotional listing."
+          required: true
