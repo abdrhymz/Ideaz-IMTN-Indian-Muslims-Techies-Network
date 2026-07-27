@@ -1,0 +1,97 @@
+name: "🪪 Apply for Membership / Verification"
+description: "Join the vetted network. IMTN is strictly vetted to stay high-signal and troll-free."
+title: "[Membership] "
+labels: ["membership", "verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        IMTN is a **strictly vetted, high-signal network**. Verification is what keeps this space safe,
+        professional, and free of noise — we treat it as an **amanah** (trust). Please provide accurate details.
+  - type: input
+    id: name
+    attributes:
+      label: "Full Name"
+      placeholder: "e.g. Abdul Rahman"
+    validations:
+      required: true
+  - type: dropdown
+    id: seniority
+    attributes:
+      label: "Seniority"
+      options:
+        - "Student"
+        - "Fresher (0–1 yrs)"
+        - "Mid-level (2–5 yrs)"
+        - "Senior (5–10 yrs)"
+        - "Lead / Staff / Principal"
+        - "Engineering Manager"
+        - "Product Manager"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: "Current Role / Title"
+      placeholder: "e.g. Backend Engineer"
+    validations:
+      required: true
+  - type: input
+    id: org
+    attributes:
+      label: "Company or Institution"
+      placeholder: "e.g. Razorpay / AMU / self-taught"
+    validations:
+      required: true
+  - type: input
+    id: linkedin
+    attributes:
+      label: "LinkedIn URL (used for verification)"
+      placeholder: "https://linkedin.com/in/..."
+    validations:
+      required: true
+  - type: input
+    id: github
+    attributes:
+      label: "GitHub / Portfolio (optional)"
+      placeholder: "https://github.com/..."
+    validations:
+      required: false
+  - type: dropdown
+    id: domain
+    attributes:
+      label: "Primary Domain"
+      options:
+        - "Software Engineering"
+        - "Data / ML / AI"
+        - "DevOps / Cloud / SRE"
+        - "Product Management"
+        - "Design"
+        - "QA / Test"
+        - "Security"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: intent
+    attributes:
+      label: "What do you hope to give — and get — from IMTN?"
+      description: "A sentence or two. Signal over noise."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: "How did you hear about IMTN? (optional)"
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "Verification & Adab"
+      options:
+        - label: "My details are accurate and I consent to being verified before accessing member channels."
+          required: true
+        - label: "I agree to uphold the Code of Conduct and the high-signal, troll-free standard of this network."
+          required: true
