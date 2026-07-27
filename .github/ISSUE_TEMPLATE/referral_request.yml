@@ -1,0 +1,77 @@
+name: "🙋 Request a Referral"
+description: "Verified members: request a referral based on your skill set."
+title: "[Referral: Request] "
+labels: ["referral", "request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request referrals honestly and specifically — respect the time of the senior members helping you.
+  - type: input
+    id: name
+    attributes:
+      label: "Name"
+    validations:
+      required: true
+  - type: input
+    id: target-role
+    attributes:
+      label: "Target Role"
+      placeholder: "e.g. SDE-1, Frontend"
+    validations:
+      required: true
+  - type: input
+    id: target-companies
+    attributes:
+      label: "Target Companies"
+      placeholder: "e.g. Flipkart, Swiggy, remote startups"
+    validations:
+      required: true
+  - type: dropdown
+    id: seniority
+    attributes:
+      label: "Your Seniority"
+      options:
+        - "Student"
+        - "Fresher (0–1 yrs)"
+        - "Mid-level (2–5 yrs)"
+        - "Senior (5+ yrs)"
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: "Skills & proof of work"
+      description: "Link your GitHub, projects, portfolio, or notable achievements. Verified skill sets get prioritised."
+    validations:
+      required: true
+  - type: input
+    id: resume
+    attributes:
+      label: "Resume link (optional)"
+    validations:
+      required: false
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Verification status"
+      options:
+        - "Verified member"
+        - "Verification pending"
+        - "Not yet applied"
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: "What specifically do you need?"
+      placeholder: "e.g. A referral to Flipkart SDE-1, or a mock system-design round."
+    validations:
+      required: true
+  - type: checkboxes
+    id: adab
+    attributes:
+      label: "Adab check"
+      options:
+        - label: "My skills and claims are honest, and I'll respect mentors' time."
+          required: true
