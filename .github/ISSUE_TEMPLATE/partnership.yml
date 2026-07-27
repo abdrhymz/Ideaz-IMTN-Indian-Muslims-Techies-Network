@@ -1,0 +1,57 @@
+name: "🏛️ University / Community Partnership"
+description: "GDSC chapters, placement cells, and student tech leads — bridge university to industry."
+title: "[Partnership] "
+labels: ["partnership", "outreach"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We're building organic partnerships to **bridge the university-to-industry gap**.
+        If you lead a student tech community, start here.
+  - type: input
+    id: org
+    attributes:
+      label: "Organisation / Institution"
+      placeholder: "e.g. GDSC JMI / Placement Cell, AMU"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Type"
+      options:
+        - "GDSC chapter"
+        - "Placement cell"
+        - "Student tech club"
+        - "University department"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: "Your role"
+      placeholder: "e.g. GDSC Lead / Placement Coordinator"
+    validations:
+      required: true
+  - type: input
+    id: reach
+    attributes:
+      label: "Audience size / reach (optional)"
+      placeholder: "e.g. ~300 members"
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "What do you propose?"
+      description: "Joint sessions, referral access, mentorship drives, hackathons — what would help your students?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: authority
+    attributes:
+      label: "Authority"
+      options:
+        - label: "I'm authorised to represent this organisation in this conversation."
+          required: true
