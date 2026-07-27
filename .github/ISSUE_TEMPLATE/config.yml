@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 IMTN Website
+    url: https://az-imtn.netlify.app/
+    about: "Learn about the network, its thesis, and its mission."
+  - name: 💼 LinkedIn Group
+    url: https://www.linkedin.com/groups/YOUR-GROUP-ID
+    about: "Join the professional conversation. (replace with your group URL)"
+  - name: 💬 GitHub Discussions
+    url: https://github.com/YOUR-ORG/Ideaz-IMTN-Indian-Muslims-Techies-Network/discussions
+    about: "Open-ended brainstorming and community conversation."
