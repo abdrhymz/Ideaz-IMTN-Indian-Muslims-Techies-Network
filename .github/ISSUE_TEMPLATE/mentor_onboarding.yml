@@ -1,0 +1,91 @@
+name: "🧭 Onboard as a Mentor"
+description: "Join the advisory layer. We're sourcing 100+ high-signal mentors."
+title: "[Mentor] "
+labels: ["mentor", "advisory"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > *"The best of people are those who are most beneficial to people."* — Prophet Muhammad ﷺ
+
+        Thank you for considering mentorship. This form helps us place you where your experience creates the most impact.
+  - type: input
+    id: name
+    attributes:
+      label: "Full Name"
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: "Current Role & Company"
+      placeholder: "e.g. Senior SDE @ Amazon"
+    validations:
+      required: true
+  - type: dropdown
+    id: org-type
+    attributes:
+      label: "Organisation Type"
+      options:
+        - "FAANG / MAANG"
+        - "Unicorn / large startup"
+        - "Funded startup"
+        - "Global remote company"
+        - "Service-based / consulting"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: experience
+    attributes:
+      label: "Years of Experience"
+      placeholder: "e.g. 8"
+    validations:
+      required: true
+  - type: input
+    id: expertise
+    attributes:
+      label: "Areas of Expertise"
+      placeholder: "e.g. Distributed systems, backend, ML infra — comma-separated"
+    validations:
+      required: true
+  - type: dropdown
+    id: mentor-on
+    attributes:
+      label: "I can mentor on"
+      options:
+        - "DSA & technical interviews"
+        - "System design"
+        - "Career growth & promotions"
+        - "Resume & positioning"
+        - "Domain-specific guidance"
+        - "Startup & product"
+        - "All of the above"
+    validations:
+      required: true
+  - type: dropdown
+    id: bandwidth
+    attributes:
+      label: "Bandwidth"
+      options:
+        - "One-off sessions"
+        - "Monthly"
+        - "Weekly"
+        - "Async (text-based)"
+        - "Flexible"
+    validations:
+      required: true
+  - type: input
+    id: linkedin
+    attributes:
+      label: "LinkedIn URL"
+      placeholder: "https://linkedin.com/in/..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: adab
+    attributes:
+      label: "Commitment"
+      options:
+        - label: "I'll mentor with patience, honesty, and respect for mentees' time and context."
+          required: true
